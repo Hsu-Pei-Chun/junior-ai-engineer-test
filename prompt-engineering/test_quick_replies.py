@@ -1,15 +1,13 @@
 import json
 import time
 from generate_quick_replies import generate_quick_replies
+from test_data import chat_history, faq_list, product_list
 
 # 測試數據
 test_data = {
-    "chat_history": [
-        {"role": "user", "content": "我要買送給愛好 3C 產品的朋友的禮物，該選哪個好？"},
-        {"role": "assistant", "content": "推薦這幾款熱門 3C 產品：1. MacBook Pro 💻 2. iPad 0 元 📱"}
-    ],
-    "faq_list": ["如何成為會員", "如何取得優惠券", "退貨政策是什麼"],
-    "product_list": ["MacBook Pro", "iPad 0 元", "高效保濕面膜", "無痕內衣"]
+    "chat_history": chat_history,
+    "faq_list": faq_list,
+    "product_list": product_list
 }
 
 # 測試次數
