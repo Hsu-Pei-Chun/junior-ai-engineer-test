@@ -34,8 +34,9 @@ def generate_quick_replies(chat_history, faq_list, product_list):
             parsed_result = json.loads(result)
             if isinstance(parsed_result, dict) and "quick_replies" in parsed_result:
                 return parsed_result["quick_replies"]  # ✅ 取出陣列，確保回傳 list
-        except json.JSONDecodeError:
-            print("❌ AI 回應的內容不是有效的 JSON 格式")
+        except json.JSONDecodeError as e:
+            print(f"❌ JSON 解析錯誤: {e}")
+            print(f"❌ OpenAI API 回應: {result}")
 
         return None  # 解析失敗時回傳 None
 
