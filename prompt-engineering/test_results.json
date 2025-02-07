@@ -1,0 +1,472 @@
+{
+    "summary": {
+        "total_tests": 50,
+        "success_count": 35,
+        "fail_count": 15,
+        "avg_response_time": 3.12,
+        "min_response_time": 1.87,
+        "max_response_time": 7.68
+    },
+    "tests": [
+        {
+            "test_case": 1,
+            "quick_replies": [
+                "需要更多選擇嗎？我可以推薦其他 3C 產品。",
+                "這兩款產品的價格和規格你有興趣了解嗎？",
+                "想了解這兩款產品的購買流程或付款方式嗎？",
+                "需要有關我們的退貨政策的信息嗎？",
+                "有興趣成為會員，享受更多購物優惠嗎？"
+            ],
+            "response_time": 2.35
+        },
+        {
+            "test_case": 2,
+            "quick_replies": [
+                "想了解 MacBook Pro 的更多細節嗎？",
+                "需要看看其他 3C 產品的選擇嗎？",
+                "想知道 iPad 0 元的購買優惠嗎？",
+                "需要比較這些產品的規格和功用嗎？",
+                "還需要其他禮物建議嗎？"
+            ],
+            "response_time": 2.59
+        },
+        {
+            "test_case": 3,
+            "quick_replies": [
+                "想了解 MacBook Pro 的更多詳情嗎？",
+                "iPad 0 元還有促銷活動，要不要看看？",
+                "需要禮品包裝服務嗎？我們可以協助。",
+                "想要了解其他 3C 產品嗎？",
+                "購買後如果有問題，可以查看我們的退貨政策。"
+            ],
+            "response_time": 2.66
+        },
+        {
+            "test_case": 4,
+            "quick_replies": [
+                "需要了解 MacBook Pro 的詳細資訊嗎？",
+                "是否想比較 MacBook Pro 及 iPad 0 元的規格差異？",
+                "想了解有關這些產品的優惠資訊嗎？",
+                "需要更多禮品推薦嗎？",
+                "考慮成為我們的會員以獲取更多優惠嗎？"
+            ],
+            "response_time": 2.59
+        },
+        {
+            "test_case": 5,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 6,
+            "quick_replies": [
+                "您想了解更多關於 MacBook Pro 的功能嗎？",
+                "iPad 0 元 是一個限時優惠，想知道如何購買？",
+                "需要其他類型的 3C 產品推薦嗎？",
+                "是否需要我們提供禮物包裝服務？",
+                "會考慮加購保險或延長保固嗎？"
+            ],
+            "response_time": 3.81
+        },
+        {
+            "test_case": 7,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 8,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 9,
+            "quick_replies": [
+                "想了解 MacBook Pro 的特色嗎？",
+                "iPad 0 元 的優惠活動詳情如何?",
+                "需要我幫您比較這兩款產品嗎？",
+                "有需要其他類型 3C 產品的推薦嗎？",
+                "想知道更多會員優惠方案？"
+            ],
+            "response_time": 1.87
+        },
+        {
+            "test_case": 10,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 11,
+            "quick_replies": [
+                "想看看 MacBook Pro 的詳細規格嗎？",
+                "iPad 0 元有哪些特殊功能呢？",
+                "需要禮物包裝服務嗎？",
+                "有需要比較其他 3C 產品嗎？",
+                "想了解如何用分期付款購買？"
+            ],
+            "response_time": 2.92
+        },
+        {
+            "test_case": 12,
+            "quick_replies": [
+                "想了解更多 MacBook Pro 的特點嗎？",
+                "有興趣看看其他可選的 3C 產品禮物嗎？",
+                "需要知道 iPad 0 元 的購買條件嗎？",
+                "需要幫你查找有關會員優惠的資訊嗎？",
+                "有什麼其他預算考量或需求嗎？"
+            ],
+            "response_time": 2.69
+        },
+        {
+            "test_case": 13,
+            "quick_replies": [
+                "想了解更多關於 MacBook Pro 嗎？",
+                "iPad 0 元的詳情介紹您需要嗎？",
+                "有興趣看看其他類型的 3C 產品嗎？",
+                "需要協助了解我們的退貨政策嗎？",
+                "想獲得購買 3C 產品的優惠券嗎？"
+            ],
+            "response_time": 2.61
+        },
+        {
+            "test_case": 14,
+            "quick_replies": [
+                "你有特定的預算範圍嗎？",
+                "需要了解產品的功能和規格嗎？",
+                "這兩款產品目前有優惠方案哦，要不要看看怎麼取得優惠券？",
+                "你的朋友更常用哪一種裝置？筆電還是平板？",
+                "要不要看看其他顏色或配件選擇？"
+            ],
+            "response_time": 2.42
+        },
+        {
+            "test_case": 15,
+            "quick_replies": [
+                "想查看 MacBook Pro 的詳細資訊嗎？",
+                "需要更多有關 iPad 0 元 的購買建議嗎？",
+                "送禮包裝服務的選擇有哪些？",
+                "是否有需要協助選擇其他 3C 產品？",
+                "想了解是否有最新的優惠活動？"
+            ],
+            "response_time": 2.54
+        },
+        {
+            "test_case": 16,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 17,
+            "quick_replies": [
+                "想看看不同3C產品的評論嗎？",
+                "需要其他價格區間的選擇嗎？",
+                "需要了解我們的退貨政策嗎？",
+                "我們有任何優惠券可以使用嗎？",
+                "想詢問更多產品詳細資訊嗎？"
+            ],
+            "response_time": 2.92
+        },
+        {
+            "test_case": 18,
+            "quick_replies": [
+                "想了解更多 MacBook Pro 的資訊嗎？",
+                "iPad 0 元在促銷中，需要我幫你查詢詳細規格嗎？",
+                "你有優惠券嗎？可能會適用於這些產品哦！",
+                "需要禮物包裝服務嗎？我可以提供相關資訊。",
+                "有需要知道這些產品的保修政策嗎？"
+            ],
+            "response_time": 2.55
+        },
+        {
+            "test_case": 19,
+            "quick_replies": [
+                "了解更多關於 MacBook Pro 的資訊",
+                "看看其他 3C 產品的優惠選項",
+                "想知道 iPad 0 元的規格嗎？",
+                "如何取得購買 3C 產品的優惠券",
+                "需要幫助選擇最適合你朋友的禮物嗎？"
+            ],
+            "response_time": 3.49
+        },
+        {
+            "test_case": 20,
+            "quick_replies": [
+                "有什麼特別功能是你想要的？",
+                "需要更多關於 MacBook Pro 的詳細資訊嗎？",
+                "你想了解其他類似的 3C 設備嗎？",
+                "要不要看看 iPad 0 元的特色介紹？",
+                "有興趣看看我們的優惠活動嗎？"
+            ],
+            "response_time": 2.86
+        },
+        {
+            "test_case": 21,
+            "quick_replies": [
+                "您要了解 MacBook Pro 的更多功能嗎？",
+                "想知道 iPad 0 元如何購買嗎？",
+                "需要了解其他 3C 產品選項嗎？",
+                "有興趣了解促銷活動或優惠券嗎？",
+                "需要我們將產品直接送到您朋友手中嗎？"
+            ],
+            "response_time": 3.57
+        },
+        {
+            "test_case": 22,
+            "quick_replies": [
+                "需要這些產品的詳細信息嗎？",
+                "想知道最新的優惠活動嗎？",
+                "這些產品有享受會員優惠嗎？",
+                "需要對比其他類似產品嗎？",
+                "有更具體的需求嗎？"
+            ],
+            "response_time": 2.69
+        },
+        {
+            "test_case": 23,
+            "quick_replies": [
+                "有需要更多 3C 禮物的推薦嗎？",
+                "您對 MacBook Pro 或 iPad 0 元有疑問嗎？",
+                "想了解這些產品的詳細規格嗎？",
+                "需要知道如何使用優惠券以獲取折扣嗎？",
+                "想知道是否有購買禮物的促銷活動？"
+            ],
+            "response_time": 3.61
+        },
+        {
+            "test_case": 24,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 25,
+            "quick_replies": [
+                "想了解這些產品的特點嗎？",
+                "需要查看更多 3C 產品選項嗎？",
+                "要知道購買時是否有優惠嗎？",
+                "對其他類型的禮物有興趣嗎？",
+                "還需要其他的購買建議嗎？"
+            ],
+            "response_time": 3.04
+        },
+        {
+            "test_case": 26,
+            "quick_replies": [
+                "需要了解這些產品的詳細規格嗎？",
+                "是否希望了解其他 3C 產品選項？",
+                "想看看 MacBook Pro 的最新優惠嗎？",
+                "需要協助下單嗎？",
+                "想知道更多關於 iPad 0 元專案的資訊嗎？"
+            ],
+            "response_time": 2.1
+        },
+        {
+            "test_case": 27,
+            "quick_replies": [
+                "想知道更多關於 MacBook Pro 的規格嗎？",
+                "需要幫助找到其他 3C 產品選擇嗎？",
+                "您是否考慮過 iPad 0 元的購買選項？",
+                "有興趣了解我們的退貨政策以安心購物嗎？",
+                "想要看看有關聯的限時優惠券嗎？"
+            ],
+            "response_time": 4.05
+        },
+        {
+            "test_case": 28,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 29,
+            "quick_replies": [
+                "這幾款產品有什麼特別功能嗎？",
+                "有沒有搭配的配件推薦？",
+                "送禮的預算大概是多少呢？",
+                "需要幫您介紹更多 3C 產品選項嗎？",
+                "想知道這些產品的用戶評價嗎？"
+            ],
+            "response_time": 2.01
+        },
+        {
+            "test_case": 30,
+            "quick_replies": [
+                "告訴我更多關於 MacBook Pro 的資訊",
+                "iPad 0 元有哪些顏色選擇？",
+                "可以告訴我這些產品的保固政策嗎？",
+                "有類似的 3C 配件可以搭配一起送嗎？",
+                "這些產品有當前的折扣或促銷活動嗎？"
+            ],
+            "response_time": 2.38
+        },
+        {
+            "test_case": 31,
+            "quick_replies": [
+                "需要更多產品建議嗎？",
+                "想了解 MacBook Pro 的特點和價格嗎？",
+                "對 iPad 0 元有疑問？我們可以提供更多資訊。",
+                "要了解我們的退貨政策嗎？",
+                "有興趣成為會員以獲得更多優惠嗎？"
+            ],
+            "response_time": 5.82
+        },
+        {
+            "test_case": 32,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 33,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 34,
+            "quick_replies": [
+                "需要更多 3C 產品推薦嗎？",
+                "想了解 MacBook Pro 的詳細規格嗎？",
+                "有關 iPad 0 元方案的常見問題有哪些？",
+                "如何享受購買 MacBook Pro 的會員優惠？",
+                "要查看其他類型的禮物建議嗎？"
+            ],
+            "response_time": 7.68
+        },
+        {
+            "test_case": 35,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 36,
+            "quick_replies": [
+                "需要更多關於 MacBook Pro 的功能介紹嗎？",
+                "想了解 iPad 0 元方案的細節嗎？",
+                "還有其他 3C 產品的推薦嗎？",
+                "如何一次性購買 MacBook Pro 和 iPad 0 元方案？",
+                "想知道有關這些產品的購買優惠嗎？"
+            ],
+            "response_time": 2.39
+        },
+        {
+            "test_case": 37,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 38,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 39,
+            "quick_replies": [
+                "這些產品中有沒有預算考量？",
+                "想了解 MacBook Pro 的更多功能嗎？",
+                "對 iPad 0 元 感興趣嗎？可以深入了解！",
+                "需要看看其他類型的 3C 產品嗎？",
+                "這位朋友對品牌有偏好嗎？"
+            ],
+            "response_time": 3.27
+        },
+        {
+            "test_case": 40,
+            "quick_replies": [
+                "有興趣了解 MacBook Pro 的詳細規格嗎？",
+                "需要更多關於 iPad 0 元的資訊嗎？",
+                "要找價格優惠的 3C 產品嗎？點這裡！",
+                "想知道退貨政策以確保禮物適合嗎？",
+                "有多少預算？我可以推薦更多選擇！"
+            ],
+            "response_time": 4.2
+        },
+        {
+            "test_case": 41,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 42,
+            "quick_replies": [
+                "這些產品有什麼功能和特色呢？",
+                "我可以查看 MacBook Pro 和 iPad 0 元 的詳細說明嗎？",
+                "這些產品有優惠或折扣嗎？",
+                "這些產品的保修服務是怎麼樣的呢？",
+                "我可以瞭解一下這兩款產品的用戶評價嗎？"
+            ],
+            "response_time": 2.87
+        },
+        {
+            "test_case": 43,
+            "quick_replies": [
+                "想了解 MacBook Pro 的功能嗎？",
+                "需要我比較 MacBook Pro 和 iPad 0 元的差異嗎？",
+                "有興趣看看這兩款的詳細規格嗎？",
+                "要找其他 3C 產品嗎？點擊查看我們的完整清單。",
+                "想知道購買這些產品的優惠資訊嗎？"
+            ],
+            "response_time": 3.46
+        },
+        {
+            "test_case": 44,
+            "quick_replies": [
+                "可考慮添加配件，如藍牙鍵盤或滑鼠，怎麼樣？",
+                "需要更多詳細的產品資訊嗎？",
+                "想看看其他價位的 3C 產品選擇嗎？",
+                "這些產品有任何特定的功能需求嗎？",
+                "需要了解產品的保修服務和退貨政策嗎？"
+            ],
+            "response_time": 2.75
+        },
+        {
+            "test_case": 45,
+            "quick_replies": [
+                "您對 MacBook Pro 有興趣嗎？點擊查看更多詳情。",
+                "想了解更多 iPad 0 元 優惠方案？",
+                "需要比較這些產品的詳細規格嗎？",
+                "詢問有關其他 3C 產品的建議。",
+                "想知道任何關於特價或折扣的資訊嗎？"
+            ],
+            "response_time": 3.41
+        },
+        {
+            "test_case": 46,
+            "quick_replies": [
+                "想了解更多 MacBook Pro 的特徵嗎？",
+                "需要查看 iPad 0 元的詳細規格嗎？",
+                "這些產品的保固條款是什麼？",
+                "有其他預算範圍內的產品推薦嗎？",
+                "需要幫忙查找其他類型的 3C 產品嗎？"
+            ],
+            "response_time": 3.38
+        },
+        {
+            "test_case": 47,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 48,
+            "error": "輸出格式錯誤，應該為 JSON 陣列",
+            "response_time": null
+        },
+        {
+            "test_case": 49,
+            "quick_replies": [
+                "這兩款產品的規格比較如何？",
+                "有這些產品的購買鏈接嗎？",
+                "是否可以包裝成禮物？",
+                "有其他價位的選擇嗎？",
+                "這些產品有任何折扣或優惠嗎？"
+            ],
+            "response_time": 2.66
+        },
+        {
+            "test_case": 50,
+            "quick_replies": [
+                "想了解 MacBook Pro 的詳情嗎？",
+                "iPad 0 元的特點是什麼呢？",
+                "需要其他 3C 推薦嗎？比如耳機或智能手錶？",
+                "想知道如何取得購物優惠券嗎？",
+                "您對其他類型的產品也有興趣嗎，比如高效保濕面膜？"
+            ],
+            "response_time": 2.86
+        }
+    ]
+}

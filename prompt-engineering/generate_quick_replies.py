@@ -18,7 +18,8 @@ def generate_quick_replies(chat_history, faq_list, product_list):
         client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
+            response_format={"type": "json_object"},
             messages=[
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": f"這是過去的對話歷史: {json.dumps(chat_history, ensure_ascii=False)}"},
@@ -28,8 +29,15 @@ def generate_quick_replies(chat_history, faq_list, product_list):
             max_tokens=100
         )
 
-        quick_replies = response.choices[0].message.content
-        return quick_replies
+        result = response.choices[0].message.content
+        try:
+            parsed_result = json.loads(result)
+            if isinstance(parsed_result, dict) and "quick_replies" in parsed_result:
+                return parsed_result["quick_replies"]  # ✅ 取出陣列，確保回傳 list
+        except json.JSONDecodeError:
+            print("❌ AI 回應的內容不是有效的 JSON 格式")
+
+        return None  # 解析失敗時回傳 None
 
     except Exception as e:
         print(f"發生錯誤: {e}")
