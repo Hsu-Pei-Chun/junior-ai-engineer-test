@@ -7,7 +7,6 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def load_prompt():
-    """ 讀取 AI 提示詞 """
     with open("return_request_prompt.txt", "r", encoding="utf-8") as f:
         return f.read()
 

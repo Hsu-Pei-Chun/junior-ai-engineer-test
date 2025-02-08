@@ -6,10 +6,12 @@ authors = ["Hsu-Pei-Chun <philosophysis@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.9"
 openai = "^1.61.1"
 python-dotenv = "^1.0.1"
 fastapi = "^0.115.8"
+uvicorn = "^0.34.0"
+tenacity = "^9.0.0"
 
 
 [build-system]
