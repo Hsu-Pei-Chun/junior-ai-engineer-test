@@ -5,6 +5,7 @@ import os
 from tenacity import retry, stop_after_attempt, wait_fixed
 from dotenv import load_dotenv
 import json
+import logging
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -31,23 +32,30 @@ def optimize_description(text: str) -> str:
         client = openai.OpenAI(api_key=OPENAI_API_KEY)
         response = client.chat.completions.create(  
             model="gpt-4o",
+            response_format={"type": "json_object"},
             messages=[{"role": "system", "content": prompt}],
-            max_tokens=200
+            max_tokens=500
         )
-        optimized_text =response.choices[0].message.content.strip()
+
+        logging.info(f"OpenAI API 回應: {response}")
+        print(f"🔍 OpenAI API 回應: {response}")
+
+        if not response.choices or not response.choices[0].message.content:
+            raise HTTPException(status_code=500, detail="❌ OpenAI API 回應為空")
+
+        optimized_text =response.choices[0].message.content.strip() if response.choices else ""
 
         if not optimized_text:
-            raise HTTPException(status_code=500, detail="OpenAI API 回應為空")
-        
-        if optimized_text.startswith("json"):
-            optimized_text = optimized_text[4:].strip()
+            raise HTTPException(status_code=500, detail="❌ OpenAI API 回應為空")
         
         try:
             return json.loads(optimized_text)
-        except:
-            raise HTTPException(status_code=500, detail="OpenAI API 回應格式錯誤: {str(e)}")
+        except json.JSONDecodeError as e:
+            logging.error(f"❌ JSON 解析錯誤: {e}")
+            raise HTTPException(status_code=500, detail=f"OpenAI API 回應格式錯誤: {str(e)}")
 
     except Exception as e:
+        logging.error(f"❌ OpenAI API 失敗: {e}")
         raise HTTPException(status_code=500, detail=f"OpenAI API 失敗: {str(e)}")
 
 @app.post("/summarized-description")

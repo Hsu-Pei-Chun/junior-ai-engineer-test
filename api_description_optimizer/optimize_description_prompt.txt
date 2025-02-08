@@ -28,8 +28,8 @@
 ---
 
 ### 📌 **輸出格式**
-請根據以下格式輸出 JSON（請確保回傳的是標準 JSON，不要包含 Markdown 或其他文字）：
-```json
+請確保只輸出純 JSON，不要包含 Markdown、"```json" 或 "```" 這類標記，也不要輸出任何額外的文字或解釋。
+
 {
   "summarized_description": {
     "title": "簡短且具體的標題",
@@ -43,7 +43,7 @@
   "status": "success",
   "error": null
 }
-```
+
 - **summarized_description**: 優化後的商品描述。
 - **status**: 若成功則回傳 `"success"`，若失敗則回傳 `"error"`。
 - **error**: 若處理過程中發生錯誤，請提供錯誤訊息，否則回傳 `null`。
@@ -56,7 +56,8 @@
 ```
 
 ### 📌 **範例輸出**
-```json
+請確保只輸出純 JSON，不要包含 Markdown、"```json" 或 "```" 這類標記，也不要輸出任何額外的文字或解釋。
+
 {
   "summarized_description": {
     "title": "無線降噪耳機",
@@ -70,4 +71,5 @@
   "status": "success",
   "error": null
 }
-```
+
+請確保 **僅輸出純 JSON**，**不要包含** 任何 Markdown 符號（例如 `"```json"` 或 `"```"`）。
