@@ -25,7 +25,7 @@ def load_prompt():
 
 # Retry 機制（API 失敗時最多重試 3 次，每次間隔 2 秒）
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
-def optimize_description(text: str) -> str:
+async def optimize_description(text: str) -> str:
     prompt = load_prompt().replace("{商品描述}", text)
 
     try:
@@ -63,7 +63,7 @@ async def summarize_description(request: DescriptionRequest):
     if not request.description.strip():
         raise HTTPException(status_code=400, detail="❌ 商品描述不可為空")
 
-    optimized_text = optimize_description(request.description)
+    optimized_text = await optimize_description(request.description)
     return optimized_text
 
 # 啟動方式（開發模式）
