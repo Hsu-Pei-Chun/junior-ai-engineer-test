@@ -6,6 +6,8 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from dotenv import load_dotenv
 import json
 import logging
+from aiocache import cached
+from aiocache.serializers import JsonSerializer
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -22,8 +24,9 @@ def load_prompt():
     with open("optimize_description_prompt.txt", "r", encoding="utf-8") as file:
         return file.read()
 
-
+# 使用 aiocache 快取結果，避免重複呼叫 OpenAI API
 # Retry 機制（API 失敗時最多重試 3 次，每次間隔 2 秒）
+@cached(ttl=3600, key_builder=lambda func, *args, **kwargs: f"{args[0]}", serializer=JsonSerializer())
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 async def optimize_description(text: str) -> str:
     prompt = load_prompt().replace("{商品描述}", text)
