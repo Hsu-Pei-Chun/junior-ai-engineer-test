@@ -1,1 +1,22 @@
 .env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# pytest
+.pytest_cache/
+.cache/
+
+# pytest-benchmark
+.benchmarks/
+
+# 如果有虛擬環境
+venv/
+.env
+
+# VSCode 產生的設定檔
+.vscode/
+
+# 其他常見暫存檔
+*.egg-info
